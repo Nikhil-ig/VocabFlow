@@ -156,7 +156,7 @@ export default function Home() {
                             guestStats.masteryPercentage = Math.round((guestStats.masteredCards / guestStats.totalCards) * 100);
                         }
                         
-                        setStatistics(guestStats);
+                        setStatistics(guestStats as any);
                     }
                 }
             } catch (error) {
